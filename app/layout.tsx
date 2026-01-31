@@ -1,6 +1,7 @@
 import NavBar from "@/src/components/NavBar";
 import "./globals.css";
 import { LanguageProvider } from "@/src/context/LanguageContext";
+import { Hero } from "@/src/components/Hero";
 
 export default function RootLayout({
   children,
@@ -12,6 +13,7 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <LanguageProvider>
           <NavBar />
+          <Hero/>
           {children}
         </LanguageProvider>
       </body>
